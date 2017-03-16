@@ -6,9 +6,9 @@
 # We will deal with noisy data from the d.g.p. y = sin(x) + e
 
 png(filename="poli.png", width=1000, height=1000)
-x <- seq(0, 2*pi, length.out=50)
+x <- seq(0, 2*pi, length.out=10)
 set.seed(101)
-y <- sin(x) + 0.3*rnorm(50)
+y <- sin(x) + 0.3*rnorm(10)
 basicplot <- function(x, y, minx=0, maxx=3*pi, title="") {
   plot(x, y, xlim=c(minx,maxx), ylim=c(-2,2), main=title)
   lines(x, sin(x), col="blue", lty=2, lwd=2)
