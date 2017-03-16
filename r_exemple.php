@@ -16,7 +16,7 @@ if(isset($_GET['N']))
   #var_dump(shell_exec(" Rscript C:/wamp/www/magicProj/script1.R $N "));
   #var_dump(exec(" rscript script1.R $N "));
   //$command = " rscript /wamp/www/magicProj/script1.R $N ";
-  $command = " .\R\R-3.3.3\bin\Rscript .\R\R-3.3.3\bin\script1.R $N ";
+  $command = " .\R\R-3.3.3\bin\Rscript script1.R $N ";
   exec(" $command ", $output);
   //var_dump($output);
   //error_reporting(E_ALL);
